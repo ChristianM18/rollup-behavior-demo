@@ -1,0 +1,30 @@
+{
+  "name": "utils",
+  "version": "1.0.0",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "exports": {
+    "./*": ["./dist/*.js", "./dist/*/index.js"]
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "glob": "^10.3.12",
+    "rollup": "^4.16.4",
+    "typescript": "5.4.5"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && rollup -c",
+    "preview": "vite preview"
+  }
+}
