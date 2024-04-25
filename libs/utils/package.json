@@ -23,8 +23,6 @@
     "typescript": "5.4.5"
   },
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && rollup -c",
-    "preview": "vite preview"
+    "build": "tsc && rollup -c"
   }
 }
